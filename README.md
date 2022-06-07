@@ -1,4 +1,4 @@
-# sendgridjp-php-example-test
+# sendgridjp-php-example-test [![sendgridjp-php-example-test](https://circleci.com/gh/yken2257/sendgridjp-php-example-test.svg)](https://app.circleci.com/pipelines/github/yken2257/sendgridjp-php-example-test)
 [SendGridJPのPHPサンプルコード](https://github.com/SendGridJP/sendgridjp-php-example)の動作確認のためのリポジトリです。
 
 ## 概要
