@@ -25,9 +25,9 @@ jobs:
             php --version
 workflows:
   version: 2
-  normal_deploy_workflow:
-    jobs:
-      - test
+#  normal_deploy_workflow:
+#    jobs:
+#      - test
   monthly_workflow:
     triggers:
       - schedule:
