@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Show versions
           command: |
-            $VER=$(cat composer.lock | jq -r '.packages[] | select(.name == "sendgrid/sendgrid") | .version')
+            VER=$(cat composer.lock | jq -r '.packages[] | select(.name == "sendgrid/sendgrid") | .version')
             echo "sendgrid/sendgrid library: Version==$VER"
             php --version
 workflows:
