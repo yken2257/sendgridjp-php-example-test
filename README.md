@@ -18,4 +18,7 @@ echo "TOS=alice@sink.sendgrid.net,bob@sink.sendgrid.net,carol@sink.sendgrid.net"
 echo "FROM=you@example.com" >> .env
 composer install
 ./vendor/bin/phpunit SampleTest.php
+# version
+php --version
+cat composer.lock | jq -r '.packages[] | select(.name == "sendgrid/sendgrid") | .version'
 ```
