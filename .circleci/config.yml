@@ -7,7 +7,10 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: composer install
+          command: |
+            composer require sendgrid/sendgrid
+            composer require vlucas/phpdotenv
+            composer require --dev phpunit/phpunit
       - run:
           name: Setup environmental valuables
           command: |
@@ -25,9 +28,9 @@ jobs:
             php --version
 workflows:
   version: 2
-#  normal_deploy_workflow:
-#    jobs:
-#      - test
+  normal_deploy_workflow:
+    jobs:
+      - test
   monthly_workflow:
     triggers:
       - schedule:
